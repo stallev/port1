@@ -1,2 +1,9 @@
 .header{
+  &__owner-name{
+    color: $form-content-color;
+    font-family: $content-ff;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+  }
 }
