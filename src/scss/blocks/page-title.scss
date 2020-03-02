@@ -1,3 +1,14 @@
 .page-title{
+  padding: 45px 0;
   text-align: center;
+  color: $content-color;
+  font-family: $content-ff;
+  font-weight: 400;
+  &__welcome{
+    padding-bottom: 20px;
+    font-size: 24px;
+  }
+  &__text{
+    font-size: 60px;
+  }
 }

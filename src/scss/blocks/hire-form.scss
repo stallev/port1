@@ -1,0 +1,15 @@
+.hire-form{
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  &__text-field{
+    box-sizing: border-box;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    color: $form-content-color;
+    font-family: $content-ff;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
