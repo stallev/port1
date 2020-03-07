@@ -1,4 +1,11 @@
 .header{
+  background-color: $header-bg;
+  &__upper{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 250px;
+  }
   &__owner-name{
     color: $form-content-color;
     font-family: $content-ff;

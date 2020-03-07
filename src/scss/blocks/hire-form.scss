@@ -1,0 +1,77 @@
+.hire-form{
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  &__input-item{
+    position: relative;
+  }
+  &__input-item label{
+    position: absolute;
+    background-repeat: no-repeat;
+    display: block;
+  }
+  &__text-field{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px 25px 18px 45px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ffffff;
+    background-color: #ebebeb;
+    color: $form-content-color;
+    font-family: $content-ff;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: italic;
+    font-weight: 400;
+  }
+  &__textarea-field{
+    box-sizing: border-box;
+    padding: 35px 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ffffff;
+    background-color: #ebebeb;
+    color: $form-content-color;
+    font-family: $content-ff;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  &__submit-field{
+    width: 127px;
+    height: 48px;
+    align-self: flex-start;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ffffff;
+    background-color: #ebebeb;
+    background-image: linear-gradient(to top, #c8c8c8 0%, #e3e3e3 100%);
+    color: #7f7f7f;
+    font-family: $content-ff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}
+.hire-form__input-label-name{
+  width: 16px;
+  height: 15px;
+  background-image: url("../img/decor/icon-user-grey.png");
+  left: 15px;
+  top: 21px;
+}
+.hire-form__input-label-email{
+  width: 16px;
+  height: 12px;
+  background-image: url("../img/decor/icon-mail-grey.png");
+  left: 15px;
+  top: 23px;
+}
+.hire-form__input-label-url{
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/decor/icon-global-grey.png");
+  left: 15px;
+  top: 21px;
+}
