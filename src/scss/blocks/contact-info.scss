@@ -1,1 +1,26 @@
-.contact-info{}
+.contact-info{
+  width: 460px;
+  color: $content-color;
+  font-family: $content-ff;
+  font-size: 14px;
+  font-weight: 400;
+  &__main-data{
+    display: flex;
+    margin-bottom: 20px;
+  }
+  &__main-text{
+    padding-left: 20px;
+    padding-right: 20px;  
+  }
+  &__profession{
+    margin-bottom: 15px;
+  }
+  &__person-description{
+    line-height: 20px;
+  }
+  &__contact-kind{
+    margin-bottom: 15px;
+    font-style: italic;
+    color: $content-color;
+  }
+}

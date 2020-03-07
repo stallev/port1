@@ -109,14 +109,22 @@
       <div class="container container--contact">
         <div class="contact__form-wrapper">
           <form action="https://htmlacademy.ru/" class="hire-form">
-            <div class="hire-form__wrapper">
-              <input type="text" class="hire-form__text-field">
-              <input type="email" id="email-input" name="email" class="hire-form__text-field">
-              <input type="url" id="website-input" name="website" class="hire-form__text-field">
+            <ul class="hire-form__wrapper">
+              <li class="hire-form__input-item">
+                <label for="input-name" class="hire-form__input-label-name"></label>
+                <input type="text" id="input-name" placeholder="Enter your name" class="hire-form__text-field hire-form__text-field--name">
+              </li>
+              <li class="hire-form__input-item">
+                <label for="email-input" class="hire-form__input-label-email"></label>
+                <input type="email" id="email-input" name="email" placeholder="Enter your email address" class="hire-form__text-field hire-form__text-field--email">
+              </li>
+              <li class="hire-form__input-item">
+                <label for="website-input" class="hire-form__input-label-url"></label>
+                <input type="url" id="website-input" name="website" placeholder="Enter your website url" class="hire-form__text-field hire-form__text-field--url">
+              </li>
               <textarea id="textarea-input" name="textarea-info" rows="4" class="hire-form__textarea-field"></textarea>
-              <input type="submit" id="submit-input" name="submit" value="Submit" class="hire-form__text-field">
-            </div>
-
+              <input type="submit" id="submit-input" name="submit" value="Submit" class="hire-form__submit-field">
+            </ul>
           </form>
         </div>
         <div class="contact-info">
@@ -131,16 +139,16 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis. Curabitur suscipit consectetur nisl, vel mattis sem tempor quis. Aenean enim lectus, aliquet sed dignissim vel, laoreet et justo. Nulla turpis nulla, dapibus in porttitor sit amet, luctus ac erat.
               </p>
             </div>
-            <div class="contact-info__contact-value">
-              <p class="contact-info__cotact-kind">
-                <span class="contact-info__action">Contact me:</span>
-                <a href="tel:+375445508311" class="contact-info__phone-number">5508311</a>
-              </p>
-              <p class="contact-info__cotact-kind">
-                <span class="contact-info__action">Email me:</span>
-                <a href="mailto:stallev@yahoo.com" class="contact-info__phone-number">stallev@yahoo.com</a>
-              </p>
-            </div>
+          </div>
+          <div class="contact-info__contact-value">
+            <p class="contact-info__contact-kind">
+              <span class="contact-info__action">Contact me:</span>
+              <a href="tel:+375445508311" class="contact-info__phone-number">5508311</a>
+            </p>
+            <p class="contact-info__contact-kind">
+              <span class="contact-info__action">Email me:</span>
+              <a href="mailto:stallev@yahoo.com" class="contact-info__email">stallev@yahoo.com</a>
+            </p>
           </div>
         </div>
       </div>
@@ -149,15 +157,9 @@
   <footer class="footer">
     <div class="container container--footer">
       <div class="footer__content">
-        <div class="footer__social">
-          <a href="#" class="footer__social-link footer__social-link--vk"></a>
-          <a href="#" class="footer__social-link footer__social-link--instagram"></a>
-          <a href="#" class="footer__social-link footer__social-link--facebook"></a>
-        </div>
-        <div class="footer__info">
-          <p class="footer__copyright">BRUME interior, 2017 &nbsp; &copy;</p>
-          <p class="footer__author-design">HolodnayaDesign</p>
-        </div>
+        <p class="footer__copyright">
+          Copyright &copy; 2020 Александр Левшенко. All rights reserved.
+        </p>
       </div>
     </div>
   </footer>
