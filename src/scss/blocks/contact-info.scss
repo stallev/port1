@@ -8,9 +8,15 @@
     display: flex;
     margin-bottom: 20px;
   }
+  &__photo{
+    display: block;
+    width: auto;
+    flex-shrink: 0;
+    //min-width: 171px;
+  }
   &__main-text{
     padding-left: 20px;
-    padding-right: 20px;  
+    padding-right: 20px;
   }
   &__profession{
     margin-bottom: 15px;
