@@ -1,3 +1,4 @@
 # Projct name
 * link to project
-https://stallev.github.io/start2/
+* Заготовка для портфолио
+http://port.stallevs.ru/
