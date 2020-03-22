@@ -2,8 +2,8 @@
   background-color: $header-bg;
   &__upper{
     display: flex;
-    justify-content: space-between;
-    padding-top: 60px;
+    justify-content: flex-start;
+    padding-top: 30px;
     padding-bottom: 250px;
   }
   &__owner-name{
