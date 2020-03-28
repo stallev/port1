@@ -1,2 +1,10 @@
 .section-title{
+  &__text{
+    padding: 30px 0;
+    text-align: center;
+    color: $content-color;
+    font-family: $content-ff;
+    font-weight: 400;
+    font-size: 48px;
+  }
 }
