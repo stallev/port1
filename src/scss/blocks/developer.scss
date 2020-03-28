@@ -1,0 +1,19 @@
+.developer{
+  &__content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__title{
+    width: 400px;
+    color: $content-color;
+    font-family: $content-ff;
+    font-weight: 700;
+    font-size: 24px;
+    font-style: italic;
+  }
+  &__photo{
+    background-color: inherit;
+    width: 25%;
+  }
+}
