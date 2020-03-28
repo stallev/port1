@@ -9,3 +9,7 @@
 .arrow.prev{	cursor: url("../img/decor/arrow-long-left.svg"), url('../img/decor/arrow-long-left.png'), pointer; }
 
 .arrow.next			{	cursor: url('../img/decor/arrow-long-right.svg'), url('../img/decor/arrow-long-right.png'), pointer; }
+
+.close:link,
+.close:visited		{	background-image: url('../img/decor/widget-close.svg'); }
+.close:hover			{	background-image: url('../img/decor/widget-close-over.svg'); }
