@@ -37,6 +37,7 @@
   }
   &__technology-list{
     display: flex;
+    flex-wrap: wrap;
     padding-left: 15px;
   }
   &__technology-item{
@@ -53,5 +54,61 @@
     font-weight: 700;
     font-style: italic;
     color: darkblue;
+  }
+}
+@media (max-width: $desctop-width){
+  .portfolio-item{
+    &__technology{
+      padding: 0;
+    }
+    &__question{
+      width: 250px;
+      text-align: right;
+    }
+    &__answer{
+      width: 400px;
+      font-size: 20px;
+    }
+  }
+}
+@media (max-width: $tablet-width) {
+  .portfolio-item{
+    &__info{
+      align-items: center;
+    }
+    &__description{
+      align-self: center;
+      padding: 20px 0;
+      font-size: 15px;
+    }
+    &__question{
+      width: 70px;
+      flex-shrink: 0;
+      text-align: right;
+      font-weight: 700;
+    }
+    &__answer{
+      padding-left: 95px;
+      font-style: italic;
+    }
+    &__technology{
+      padding: 0;
+    }
+    &__technology-list{
+      padding-left: 0;
+    }
+    &__technology-title{
+      padding-bottom: 10px;
+      font-size: 17px;
+    }
+    &__technology-item{
+      padding-left: 10px;
+      font-size: 15px;
+    }
+    &__git-link{
+      padding: 5px 10px 5px 0;
+      font-size: 15px;
+      text-align: center;
+    }
   }
 }

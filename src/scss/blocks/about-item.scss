@@ -17,3 +17,13 @@
     margin-right: 15px;
   }
 }
+@media (max-width: $desctop-width){
+  .about-item{
+    width: 420px;
+  }
+}
+@media (max-width: $tablet-width) {
+  .about-item{
+    width: 300px;
+  }
+}

@@ -12,3 +12,19 @@
     font-size: 60px;
   }
 }
+@media (max-width: $desctop-width){
+  .page-title{
+    padding: 30px 0;
+    &__text{
+      font-size: 50px;
+    }
+  }
+}
+@media (max-width: $tablet-width) {
+  .page-title{
+    padding: 15px 0;
+    &__text{
+      font-size: 40px;
+    }
+  }
+}

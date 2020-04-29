@@ -1,5 +1,5 @@
 .container{
-  width: 940px;
+  width: $desctop-width;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -12,4 +12,14 @@
   margin-top: 30px;
   padding-top: 15px;
   border-top: 1px solid $content-color;
+}
+@media (max-width: $desctop-width){
+  .container{
+    width: $tablet-width;
+  }
+}
+@media (max-width: $tablet-width) {
+  .container{
+    width: $mobile-width;
+  }
 }

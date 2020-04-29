@@ -18,3 +18,25 @@
     width: 43px;
     height: 17px;
 }
+
+@media (max-width: $desctop-width){
+    .slide-box{
+        padding-bottom: 100%;
+    }
+    .pager{
+      bottom: 25px;
+    }
+    .pg-item{
+        width: 30px;
+        height: 12px;
+    }
+  }
+  @media (max-width: $tablet-width) {
+    .slide-box{
+        padding-bottom: 125%;
+    }
+    .pg-item{
+        width: 20px;
+        height: 8px;
+    }
+  }
