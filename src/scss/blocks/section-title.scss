@@ -8,3 +8,14 @@
     font-size: 48px;
   }
 }
+@media (max-width: $desctop-width){
+  .section-title{}
+}
+@media (max-width: $tablet-width) {
+  .section-title{
+    &__text{
+      padding: 0;
+      padding-bottom: 30px;
+    }
+  }
+}

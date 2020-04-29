@@ -18,13 +18,15 @@
     width: 43px;
     height: 17px;
 }
-
+.pager{
+    top: 71%;
+}
 @media (max-width: $desctop-width){
     .slide-box{
         padding-bottom: 100%;
     }
     .pager{
-      bottom: 25px;
+      top: 60%;
     }
     .pg-item{
         width: 30px;
@@ -33,8 +35,11 @@
   }
   @media (max-width: $tablet-width) {
     .slide-box{
-        padding-bottom: 125%;
+        padding-bottom: 129%;
     }
+    .pager{
+        top: 56%;
+      }
     .pg-item{
         width: 20px;
         height: 8px;

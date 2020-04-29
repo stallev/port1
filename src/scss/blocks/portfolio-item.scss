@@ -6,6 +6,7 @@
   font-family: $content-ff;
   &__photo-link{
     display: block;
+    margin-bottom: 7%;
   }
   &__title{
     padding: 15px 0;
@@ -90,6 +91,7 @@
     &__answer{
       padding-left: 95px;
       font-style: italic;
+      font-size: 15px;
     }
     &__technology{
       padding: 0;
