@@ -1,0 +1,32 @@
+.skills{
+  &__content{
+    display: flex;
+    justify-content: space-around;
+  }
+  &__adv, &__reward{
+    width: 420px;
+  }
+  &__list{
+    padding-top: 30px;
+  }
+  &__subtitle-text{
+    text-align: center;
+    color: $content-color;
+    font-family: $content-ff;
+    font-weight: 400;
+    font-size: 32px;
+  }
+  &__item{
+    position: relative;
+    list-style: none;
+    padding-left: 35px;
+    margin-bottom: 15px;
+  }
+  &__item-content{
+    color: $content-color;
+    font-family: $content-ff;
+    font-weight: 400;
+    font-size: 22px;
+    font-style: italic;
+  }
+}

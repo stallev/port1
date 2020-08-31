@@ -11,28 +11,6 @@
     font-size: 22px;
     font-weight: 500;
   }
-  &__contacts-title{
-    margin-bottom: 15px;
-    font-weight: 700;
-  }
-  &__contacts-list{
-
-  }
-  &__contact-item{
-    display: flex;
-    font-weight: 400;
-  }
-  &__contact-item-description{
-    display: block;
-    margin-right: 20px;
-    font-size: 14px;
-    line-height: 26px;
-  }
-  &__contact-item-content{
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: 700;
-  }
 }
 @media (max-width: $desctop-width){
   .about-me{
