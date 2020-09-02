@@ -10,3 +10,19 @@ ul{
   padding: 0;
 }
 @include respond-to(tabletAndWider){}
+.goal__text{
+  padding: 25px 0;
+  color: red;
+  font-family: $content-ff;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+@media (max-width: $desctop-width){
+  .goal__text{
+    padding: 15px 0;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
