@@ -51,18 +51,18 @@
 .slider .slick-arrow{
   position: absolute;
   top: 50%;
-  margin-top: -30px;
+  margin-top: -145px;
   z-index: 10;
   font-size: 0;
   height: 60px;
   width: 30px;
 }
 .slider .slick-arrow.slick-prev{
-  left: 0;
+  left: 40px;
   background: url("../img/decor/sl-arrow_l.svg") 0 0 / 100% no-repeat;
 }
 .slider .slick-arrow.slick-next{
-  right: 0;
+  right: 40px;
   background: url("../img/decor/sl-arrow_r.svg") 0 0 / 100% no-repeat;
 }
 .slider .slick-dots{
@@ -90,4 +90,34 @@
   box-sizing: border-box;
   background-color: #0F2CCF;
   border: 2px solid green;
+}
+@media (max-width: $desctop-width){
+  .slider .slick-arrow.slick-prev,
+  .slider .slick-arrow.slick-next{
+    background-size: 50%;
+  }
+  .slider .slick-arrow.slick-prev{
+    left: 40px;
+  }
+  .slider .slick-arrow.slick-next{
+    right: 30px;
+  }
+  .slider .slick-arrow{
+    margin-top: -135px;
+  }
+}
+@media (max-width: $tablet-width){
+  .slider .slick-arrow.slick-prev,
+  .slider .slick-arrow.slick-next{
+    background-size: 32%;
+  }
+  .slider .slick-arrow.slick-prev{
+    left: 35px;
+  }
+  .slider .slick-arrow.slick-next{
+    right: 20px;
+  }
+  .slider .slick-arrow{
+    margin-top: -115px;
+  }
 }

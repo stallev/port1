@@ -7,12 +7,37 @@
   &__photo-link{
     display: block;
     margin-bottom: 7%;
+    position: relative;
   }
   &__title{
     padding: 15px 0;
     text-align: center;
     font-size: 26px;
     font-weight: 400;
+  }
+  &__image{
+    height: 100%;
+  }
+  &__image img{
+    position: relative;
+  }
+  &__photo-link::before,
+  &__photo-link::after{
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0px;
+    width: 7%;
+    height: 100%;
+    opacity: 0.2;
+    background-color: black;
+    z-index: 2;
+  }
+  &__photo-link::before{
+    left: 1px;
+  }
+  &__photo-link::after{
+    right: 1px;
   }
   &__description{
     display: flex;

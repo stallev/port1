@@ -1,6 +1,6 @@
 .section-title{
   &__text{
-    padding: 30px 0;
+    margin-top: 25px;
     text-align: center;
     color: $content-color;
     font-family: $content-ff;
@@ -9,13 +9,17 @@
   }
 }
 @media (max-width: $desctop-width){
-  .section-title{}
+  .section-title{
+    &__text{
+      font-size: 38px;
+    }
+  }
 }
 @media (max-width: $tablet-width) {
   .section-title{
     &__text{
-      padding: 0;
-      padding-bottom: 30px;
+      padding-bottom: 10px;
+      font-size: 30px;
     }
   }
 }
