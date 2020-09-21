@@ -95,6 +95,20 @@ function htmls() {
     .pipe(gulp.dest(paths.build));
 }
 
+function phps() {
+  return gulp.src(paths.src + '*.php')
+    .pipe(plumber())
+    .pipe(replace(/\n\s*<!--DEV[\s\S]+?-->/gm, ''))
+    .pipe(gulp.dest(paths.build));
+}
+
+function phplibs() {
+  return gulp.src('src/**/*.' + '*.php')
+    .pipe(plumber())
+    .pipe(replace(/\n\s*<!--DEV[\s\S]+?-->/gm, ''))
+    .pipe(gulp.dest(paths.build));
+}
+
 function images() {
   return gulp.src('src/img/**/*.{jpg,png,gif,svg}')
     .pipe(imagemin([
@@ -127,6 +141,8 @@ exports.styles = styles;
 exports.scripts = scripts;
 exports.scriptsVendors = scriptsVendors;
 exports.htmls = htmls;
+exports.phps = phps;
+exports.phplibs = phplibs;
 exports.images = images;
 exports.svgSprite = svgSprite;
 exports.clean = clean;
@@ -134,11 +150,11 @@ exports.watch = watch;
 
 gulp.task('build', gulp.series(
   clean,
-  gulp.parallel(styles, svgSprite, scripts, scriptsVendors, htmls, copyFonts, images)
+  gulp.parallel(styles, svgSprite, scripts, scriptsVendors, htmls, phps, phplibs, copyFonts, images)
 ));
 
 gulp.task('default', gulp.series(
   clean,
-  gulp.parallel(styles, svgSprite, scripts, scriptsVendors, htmls, copyFonts, images),
+  gulp.parallel(styles, svgSprite, scripts, scriptsVendors, htmls, phps, phplibs, copyFonts, images),
   gulp.parallel(watch, serve)
 ));
