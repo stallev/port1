@@ -1,4 +1,40 @@
 .contacts{
+  &__form-input-list{
+    display: flex;
+    flex-direction: column;
+  }
+  &__form-input-small-1-list{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__form-input-small-2-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__form-input-field,
+  &__form-submit{
+    display: block;
+    width: 250px;
+    margin-bottom: 25px;
+    padding: 10px 10px 10px 15px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    &--message{
+      height: 120px;
+      width: 581px;
+      vertical-align: top;
+    }
+  }
+  &__form-submit{
+    background-color:#db4e16;
+    border-radius: 5px;
+    width: 278px;
+  }
+  &__form-submit{
+    display: block;
+  }
   &__contacts-title{
     margin-bottom: 15px;
     font-weight: 700;
@@ -10,8 +46,8 @@
   }
   &__item{
     display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+    justify-content: left;
+    margin-bottom: 15px;
     text-align: center;
     font-weight: 400;
   }
@@ -19,17 +55,26 @@
     display: block;
     margin-right: 20px;
     text-align: center;
-    font-size: 26px;
-    line-height: 34px;
+    font-size: 20px;
+    line-height: 26px;
   }
   &__item-content{
-    font-size: 26px;
-    line-height: 34px;
+    font-size: 20px;
+    line-height: 26px;
     font-weight: 700;
   }
 }
 @media (max-width: $desctop-width){
   .contacts{
+    &__form-input-small-1-list,
+    &__form-input-small-2-list{
+      flex-direction: column;
+      margin-bottom: 15px;
+      align-items: center;
+    }
+    &__form-input-field--message{
+      width: 320px;
+    }
     &__item-description{
       display: block;
       margin-right: 20px;

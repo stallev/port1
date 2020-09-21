@@ -274,9 +274,24 @@
       </div>
     </section>
     <section class="contacts">
-      <h3 class="section-title__text">Как со мной связаться</h3>
+      <h2 class="section-title__text">Как со мной связаться</h2>
       <div class="container">
         <div class="contacts__content">
+          <form action="mail.php" class="contacts__form">
+            <div class="contacts__form-input-list">
+              <div class="contacts__form-input-small-1-list">
+                <input type="text" name="person-name" placeholder="Имя" required class="contacts__form-input-field">
+                <input type="tel" name="person-phone" placeholder="Телефон" class="contacts__form-input-field">
+                <input type="email" name="person-email" placeholder="E-mail" required  class="contacts__form-input-field">
+              </div>
+              <div class="contacts__form-input-small-2-list">
+                <textarea rows="20" cols="45" name="person-message" placeholder="Ваше сообщение" required class="contacts__form-input-field contacts__form-input-field--message"></textarea>
+                <button type="submit" class="contacts__form-submit">
+                  Отправить
+                </button>
+              </div>
+            </div>
+          </form>
           <ul class="contacts__list">
             <li class="contacts__item">
               <span class="contacts__item-description">Email:</span>
@@ -288,6 +303,27 @@
             </li>
           </ul>
         </div>
+      </div>
+    </section>
+    <section class="social">
+      <div class="container">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <img src="" alt="" class="social__image">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <img src="" alt="" class="social__image">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <img src="" alt="" class="social__image">
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
